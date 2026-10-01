@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mindoro Escape Hub</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+font-family:Arial,sans-serif;
+color:#17453e;
+background:#f7fbf8;
+line-height:1.6;
+}
+nav{
+position:sticky;
+top:0;
+z-index:10;
+background:white;
+padding:15px 6%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 12px #0002;
+}
+.logo{
+font-size:20px;
+font-weight:bold;
+color:#176b5c;
+}
+nav a{
+color:#17453e;
+text-decoration:none;
+margin-left:14px;
+font-weight:bold;
+}
+.hero{
+min-height:75vh;
+display:flex;
+align-items:center;
+padding:60px 8%;
+color:white;
+background:
+linear-gradient(#064e3bcc,#064e3bcc),
+url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80")
+center/cover;
+}
+.hero div{max-width:700px}
+.hero h1{
+font-size:clamp(40px,8vw,75px);
+line-height:1.05;
+margin:15px 0;
+}
+.hero p{font-size:18px;margin-bottom:22px}
+.btn{
+display:inline-block;
+background:#f4c95d;
+color:#173f3b;
+padding:12px 22px;
+border-radius:30px;
+font-weight:bold;
+text-decoration:none;
+border:0;
+}
+section{padding:60px 8%}
+.title{text-align:center;margin-bottom:30px}
+.title h2{font-size:32px;color:#176b5c}
+.about{
+max-width:850px;
+margin:auto;
+text-align:center;
+}
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+.card{
+background:white;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 4px 18px #0001;
+}
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+.card-content{padding:18px}
+.card h3{color:#176b5c;margin-bottom:6px}
+.package{
+background:#e8f3ed;
+padding:24px;
+border-radius:16px;
+}
+.package strong{
+font-size:20px;
+color:#176b5c;
+}
+.why{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:18px;
+text-align:center;
+}
+.why div{
+background:white;
+padding:22px;
+border-radius:15px;
+box-shadow:0 3px 15px #0001;
+}
+.contact{background:#e7f2ed}
+form{
+max-width:650px;
+margin:auto;
+display:grid;
+gap:12px;
+}
+input,textarea{
+padding:13px;
+border:1px solid #bdd0c8;
+border-radius:10px;
+font:inherit;
+}
+.qr{
+text-align:center;
+background:white;
+padding:25px;
+border-radius:18px;
+max-width:330px;
+margin:25px auto;
+}
+.qr img{
+width:210px;
+height:210px;
+}
+footer{
+background:#123f38;
+color:white;
+text-align:center;
+padding:25px;
+}
+@media(max-width:700px){
+nav{
+flex-direction:column;
+gap:10px;
+}
+nav a{
+margin:0 4px;
+font-size:12px;
+}
+.hero{min-height:70vh}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">🌴 Mindoro Escape Hub</div>
+<div>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#destinations">Destinations</a>
+<a href="#packages">Packages</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<header class="hero" id="home">
+<div>
+<p>DISCOVER • EXPLORE • EXPERIENCE</p>
+
+<h1>Your Gateway to Oriental Mindoro</h1>
+
+<p>
+Discover beautiful beaches, nature, culture, and unforgettable
+local adventures through Mindoro Escape Hub.
+</p>
+
+<a class="btn" href="#destinations">Explore Destinations</a>
+</div>
+</header>
+
+<section id="about">
+<div class="title">
+<h2>About Mindoro Escape Hub</h2>
+</div>
+
+<div class="about">
+<p>
+Mindoro Escape Hub is a student-developed tourism concept designed
+to help travelers discover selected destinations in Oriental Mindoro.
+We provide simple tour ideas, packages, and travel information for
+students, young professionals, and local travelers.
+</p>
+</div>
+</section>
+
+<section id="destinations">
+
+<div class="title">
+<h2>Explore Oriental Mindoro</h2>
+<p>Places worth discovering.</p>
+</div>
+
+<div class="cards">
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<h3>Puerto Galera</h3>
+<p>
+Enjoy beaches, island scenery, marine activities, and relaxing
+coastal experiences.
+</p>
+</div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<h3>Calapan City</h3>
+<p>
+Explore the provincial capital, local food, culture, and nearby
+attractions.
+</p>
+</div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<h3>Nature Escapes</h3>
+<p>
+Experience green landscapes, outdoor adventures, and peaceful
+nature trips.
+</p>
+</div>
+</article>
+
+</div>
+</section>
+
+<section id="packages">
+
+<div class="title">
+<h2>Tour Packages</h2>
+<p>Sample packages for your next escape.</p>
+</div>
+
+<div class="cards">
+
+<div class="package">
+<strong>🌊 Beach Escape</strong>
+<p>2 Days / 1 Night</p>
+<p>
+Beach visit, local sightseeing, basic tour coordination,
+and selected meals.
+</p>
+<br>
+<b>Sample Rate: ₱2,500/person</b>
+</div>
+
+<div class="package">
+<strong>🌿 Nature Adventure</strong>
+<p>1 Day Tour</p>
+<p>
+Nature sightseeing, transportation coordination,
+entrance fees, and basic meals.
+</p>
+<br>
+<b>Sample Rate: ₱2,500/person</b>
+</div>
+
+<div class="package">
+<strong>🌴 Mindoro Weekend</strong>
+<p>Weekend Package</p>
+<p>
+A simple combination of sightseeing, food experiences,
+and selected local attractions.
+</p>
+<br>
+<b>Sample Rate: ₱2,500/person</b>
+</div>
+
+</div>
+</section>
+
+<section id="gallery">
+
+<div class="title">
+<h2>Gallery</h2>
+<p>A glimpse of the escape.</p>
+</div>
+
+<div class="cards">
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<h3>Nature</h3>
+</div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<h3>Island Life</h3>
+</div>
+</article>
+
+<article class="card">
+<img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<h3>Adventure</h3>
+</div>
+</article>
+
+</div>
+</section>
+
+<section>
+
+<div class="title">
+<h2>Why Choose Us?</h2>
+</div>
+
+<div class="why">
+
+<div>
+<h3>📍 Local Focus</h3>
+<p>Explore destinations in Oriental Mindoro.</p>
+</div>
+
+<div>
+<h3>💰 Student-Friendly</h3>
+<p>Simple and practical package ideas.</p>
+</div>
+
+<div>
+<h3>🧭 Easy Planning</h3>
+<p>Helpful information for your trip.</p>
+</div>
+
+<div>
+<h3>💚 Memorable Trips</h3>
+<p>Discover places and create experiences.</p>
+</div>
+
+</div>
+</section>
+
+<section class="contact" id="contact">
+
+<div class="title">
+<h2>Contact / Inquiry</h2>
+<p>Interested in a Mindoro escape? Send us a message.</p>
+</div>
+
+<form onsubmit="event.preventDefault();alert('Thank you for your inquiry!');">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<textarea rows="5" placeholder="Your inquiry" required></textarea>
+
+<button class="btn" type="submit">Send Inquiry</button>
+
+</form>
+
+<div class="qr">
+
+<h3>🔳 Scan to Visit Our Website</h3>
+
+<p>The QR uses this website's current address.</p>
+
+<img id="qr" alt="Website QR Code">
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Mindoro Escape Hub | Student Tourism Project</p>
+
+<p>Discover. Explore. Experience.</p>
+
+</footer>
+
+<script>
+
+document.getElementById("qr").src =
+"https://api.qrserver.com/v1/create-qr-code/?size=250x250&data="
++ encodeURIComponent(window.location.href);
+
+</script>
+
+</body>
+</html>
